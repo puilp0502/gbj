@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "group-by-jq"
+version = "0.1.0"
+description = "Group by newline-delimeted JSON data via jq expression"
+authors = ["Frank Yang <puilp0502@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+jq = "^1.2.2"
+tabulate = "^0.8.10"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+gbj = 'group_by_jq:main'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
